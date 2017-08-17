@@ -8,13 +8,14 @@ Pod::Spec.new do |s|
 
   s.license      = "MIT"
   s.platform     = :ios
-  s.ios.deployment_target = "8.0"
 
   s.author             = { "OComme" => "a1653913692@icloud.com" }
-  s.requires_arc = true
 
   s.source       = { :git => "https://github.com/OComme/WKSimpleButton.git", :tag => "#{s.version}" }
-  s.source_files  = "WKSimpleButtonDemo/**/WKSimpleButton/*.{h,m}"
+  s.source_files  = "WKSimpleButtonDemo/**/*.{h,m}"
+
+  s.requires_arc = true
+  s.ios.deployment_target = "8.0"
 
   s.dependency "Masonry"
   s.dependency "ReactiveObjC"
