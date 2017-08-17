@@ -76,7 +76,7 @@
 - (void)theInteractionEvents
 {
     RAC(self.visiableView,alignment)    = RACObserve(self, alignment);
-    RAC(self.visiableView,spacing)      = RACObserve(self,textAlignment);
+    RAC(self.visiableView,spacing)      = RACObserve(self,spacing);
     
     RAC(self.label_msg,textAlignment)   = RACObserve(self, textAlignment);
     RAC(self.label_msg,textColor)       = RACObserve(self, textColor);
