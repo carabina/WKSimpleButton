@@ -14,15 +14,15 @@
  */
 #import <UIKit/UIKit.h>
 
-typedef NS_ENUM(NSInteger,PublickSimpleButtonType){
+typedef NS_ENUM(NSInteger,WKSimpleButtonType){
     //文字在图片上
-    PublickSimpleButtonTypeTextAboveImage   = 1,
+    WKSimpleButtonTypeTextAboveImage   = 1,
     //文字在图片下
-    PublickSimpleButtonTypeTextBelowImage   = 1 << 1,
+    WKSimpleButtonTypeTextBelowImage   = 1 << 1,
     //文字在图片前
-    PublickSimpleButtonTypeTextBeforeImage  = 1 << 2,
+    WKSimpleButtonTypeTextBeforeImage  = 1 << 2,
     //文字在图片后
-    PublickSimpleButtonTypeTextBehindImage  = 1 << 3,
+    WKSimpleButtonTypeTextBehindImage  = 1 << 3,
 };
 
 @interface WKSimpleButton : UIControl
@@ -30,7 +30,7 @@ typedef NS_ENUM(NSInteger,PublickSimpleButtonType){
 /**
  按钮样式
  */
-@property (nonatomic,assign) PublickSimpleButtonType buttonType;
+@property (nonatomic,assign) WKSimpleButtonType buttonType;
 
 /**
  字体大小

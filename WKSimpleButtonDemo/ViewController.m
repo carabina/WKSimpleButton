@@ -27,7 +27,7 @@
     WKSimpleButton *simpleBtn = [WKSimpleButton new];
     simpleBtn.text = @"asdasd";
     simpleBtn.image = [UIImage imageNamed:@"acct_selected"];
-    simpleBtn.buttonType = PublickSimpleButtonTypeTextBelowImage;
+    simpleBtn.buttonType = WKSimpleButtonTypeTextBelowImage;
     [self.view addSubview:simpleBtn];
     [simpleBtn addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
     [simpleBtn mas_makeConstraints:^(MASConstraintMaker *make) {

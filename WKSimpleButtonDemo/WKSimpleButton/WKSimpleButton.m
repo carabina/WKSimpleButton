@@ -109,18 +109,18 @@
 }
 
 #pragma mark-setter
-- (void)setButtonType:(PublickSimpleButtonType)buttonType
+- (void)setButtonType:(WKSimpleButtonType)buttonType
 {
     if (_buttonType == buttonType) {
         return;
     }
     _buttonType = buttonType;
     
-    NSInteger Vertical = (self.buttonType == PublickSimpleButtonTypeTextAboveImage||self.buttonType == PublickSimpleButtonTypeTextBelowImage);
-    NSInteger Horizontal = (self.buttonType == PublickSimpleButtonTypeTextBeforeImage||self.buttonType == PublickSimpleButtonTypeTextBehindImage);
+    NSInteger Vertical = (self.buttonType == WKSimpleButtonTypeTextAboveImage||self.buttonType == WKSimpleButtonTypeTextBelowImage);
+    NSInteger Horizontal = (self.buttonType == WKSimpleButtonTypeTextBeforeImage||self.buttonType == WKSimpleButtonTypeTextBehindImage);
     
-    NSInteger textLeading = (self.buttonType == PublickSimpleButtonTypeTextAboveImage||self.buttonType == PublickSimpleButtonTypeTextBeforeImage);
-    NSInteger textTrailing = (self.buttonType == PublickSimpleButtonTypeTextBelowImage||self.buttonType == PublickSimpleButtonTypeTextBehindImage);
+    NSInteger textLeading = (self.buttonType == WKSimpleButtonTypeTextAboveImage||self.buttonType == WKSimpleButtonTypeTextBeforeImage);
+    NSInteger textTrailing = (self.buttonType == WKSimpleButtonTypeTextBelowImage||self.buttonType == WKSimpleButtonTypeTextBehindImage);
     
     if (Vertical) {
         self.visiableView.axis = UILayoutConstraintAxisVertical;
