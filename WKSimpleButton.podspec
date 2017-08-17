@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source       = { :git => "https://github.com/OComme/WKSimpleButton.git", :tag => "#{s.version}" }
-  s.source_files  = "WKSimpleButton/*"
+  s.source_files  = "WKSimpleButtonDemo/**/WKSimpleButton/*.{h,m}"
 
   s.dependency "Masonry"
   s.dependency "ReactiveObjC"
