@@ -13,35 +13,11 @@
  修改描述：
  */
 #import <UIKit/UIKit.h>
-
-typedef NS_ENUM(NSInteger,WKSimpleButtonType){
-    //文字在图片上
-    WKSimpleButtonTypeTextAboveImage   = 1,
-    //文字在图片下
-    WKSimpleButtonTypeTextBelowImage   = 1 << 1,
-    //文字在图片前
-    WKSimpleButtonTypeTextBeforeImage  = 1 << 2,
-    //文字在图片后
-    WKSimpleButtonTypeTextBehindImage  = 1 << 3,
-};
+#import "WKSimpleButtonStateModel.h"
 
 @interface WKSimpleButton : UIControl
 
-/**
- 按钮样式
- */
-@property (nonatomic,assign) WKSimpleButtonType buttonType;
-
-/**
- 字体大小
- */
-@property (nonnull,nonatomic,strong) UIFont *font;
-
-/**
- 文本颜色
- */
-@property (nonnull,nonatomic,strong) UIColor *textColor;
-
+#pragma mark-base set 基本设置
 /**
  文本对齐方式
  */
@@ -52,21 +28,82 @@ typedef NS_ENUM(NSInteger,WKSimpleButtonType){
  */
 @property (nonatomic,assign) UIStackViewAlignment alignment;
 
+/**
+ 内容模式
+ */
+@property (nonatomic,assign) UIViewContentMode contentMode;
 
 /**
  间隔
  */
 @property (nonatomic,assign) CGFloat spacing;
 
-/**
- 文本内容
- */
-@property (nonnull,nonatomic,copy) NSString *text;
+#pragma mark-stateModel set状态模型设置
 
 /**
- 图片
+ 设置状态模型
+
+ @param stateModel 状态模型
+ @param state 状态
  */
-@property (nonnull,nonatomic,strong) UIImage *image;
+- (void)setStateModel:(nullable WKSimpleButtonStateModel *)stateModel forState:(UIControlState)state;
+
+/**
+ 设置标题
+
+ @param title 标题
+ @param state 状态
+ */
+- (void)setTitle:(nullable NSString *)title forState:(UIControlState)state;
+
+/**
+ 设置富文本内容
+
+ @param attributedTitle 富文本
+ @param state 状态
+ */
+- (void)setAttributedTitle:(nullable NSAttributedString *)attributedTitle forState:(UIControlState)state;
+
+/**
+ 设置文本字体大小
+
+ @param font 字体大小
+ @param state 状态
+ */
+- (void)setTitleFont:(nullable UIFont *)font forState:(UIControlState)state;
+
+
+/**
+ 设置标题颜色
+
+ @param color 颜色
+ @param state 状态
+ */
+- (void)setTitleColor:(nullable UIColor *)color forState:(UIControlState)state;
+
+/**
+ 设置图标
+
+ @param image 图标
+ @param state 状态
+ */
+- (void)setImage:(nullable UIImage *)image forState:(UIControlState)state;
+
+/**
+ 设置背景图
+
+ @param backgroundimage 背景图
+ @param state 状态
+ */
+- (void)setBackgroundImage:(nullable UIImage *)backgroundimage forState:(UIControlState)state;
+
+/**
+ 设置按钮样式
+
+ @param buttonType 按钮样式
+ @param state 状态
+ */
+- (void)setButtonType:(WKSimpleButtonType)buttonType forState:(UIControlState)state;
 
 
 @end

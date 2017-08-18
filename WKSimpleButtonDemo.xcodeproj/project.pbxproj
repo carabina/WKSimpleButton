@@ -14,6 +14,7 @@
 		84C7DA291F45868D0016EE57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C7DA281F45868D0016EE57 /* Assets.xcassets */; };
 		84C7DA2C1F45868D0016EE57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C7DA2A1F45868D0016EE57 /* LaunchScreen.storyboard */; };
 		84C7DA361F458A860016EE57 /* WKSimpleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C7DA351F458A860016EE57 /* WKSimpleButton.m */; };
+		84C9F1991F468E4100484874 /* WKSimpleButtonStateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C9F1981F468E4100484874 /* WKSimpleButtonStateModel.m */; };
 		F8F8EC6E0CA14AF6E33A0944 /* Pods_WKSimpleButtonDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D9D9A0C86EA7F70472C25E4 /* Pods_WKSimpleButtonDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,8 @@
 		84C7DA2D1F45868D0016EE57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84C7DA341F458A860016EE57 /* WKSimpleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKSimpleButton.h; sourceTree = "<group>"; };
 		84C7DA351F458A860016EE57 /* WKSimpleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKSimpleButton.m; sourceTree = "<group>"; };
+		84C9F1971F468E4100484874 /* WKSimpleButtonStateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKSimpleButtonStateModel.h; sourceTree = "<group>"; };
+		84C9F1981F468E4100484874 /* WKSimpleButtonStateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKSimpleButtonStateModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,8 @@
 			children = (
 				84C7DA341F458A860016EE57 /* WKSimpleButton.h */,
 				84C7DA351F458A860016EE57 /* WKSimpleButton.m */,
+				84C9F1971F468E4100484874 /* WKSimpleButtonStateModel.h */,
+				84C9F1981F468E4100484874 /* WKSimpleButtonStateModel.m */,
 			);
 			path = WKSimpleButton;
 			sourceTree = "<group>";
@@ -239,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C9F1991F468E4100484874 /* WKSimpleButtonStateModel.m in Sources */,
 				84C7DA241F45868D0016EE57 /* ViewController.m in Sources */,
 				84C7DA211F45868D0016EE57 /* AppDelegate.m in Sources */,
 				84C7DA1E1F45868D0016EE57 /* main.m in Sources */,

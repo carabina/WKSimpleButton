@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "WKSimpleButton.h"
 #import "Masonry.h"
+#import "WKSimpleButton.h"
 
 @interface ViewController ()
 
@@ -25,19 +26,27 @@
 - (void)creatSimpleButton
 {
     WKSimpleButton *simpleBtn = [WKSimpleButton new];
-    simpleBtn.text = @"asdasd";
-    simpleBtn.image = [UIImage imageNamed:@"acct_selected"];
-    simpleBtn.buttonType = WKSimpleButtonTypeTextBelowImage;
+    simpleBtn.contentMode = UIViewContentModeScaleAspectFit;
+    simpleBtn.spacing = 10;
+    
+    [simpleBtn setTitle:@"sdad" forState:UIControlStateNormal];
+    [simpleBtn setImage:[UIImage imageNamed:@"acct_normal"] forState:UIControlStateNormal];
+    [simpleBtn setButtonType:WKSimpleButtonTypeTextBehindImage forState:UIControlStateNormal];
+
+    [simpleBtn setTitle:@"神经" forState:UIControlStateHighlighted];
+    [simpleBtn setImage:[UIImage imageNamed:@"acct_selected"] forState:UIControlStateSelected];
+    [simpleBtn setButtonType:WKSimpleButtonTypeTextAboveImage forState:UIControlStateSelected];
+
     [self.view addSubview:simpleBtn];
-    [simpleBtn addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
+    [simpleBtn addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchUpInside];
     [simpleBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.mas_equalTo(CGPointMake(0, 0));
     }];
 }
 
-- (void)click
+- (void)click:(UIControl*)control
 {
-    NSLog(@"hah");
+    control.selected = !control.selected;
 }
 
 - (void)didReceiveMemoryWarning {
