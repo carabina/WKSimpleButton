@@ -10,14 +10,6 @@
 #import <objc/runtime.h>
 
 @implementation WKSimpleButtonStateModel
-- (instancetype)init
-{
-    if (self = [super init]) {
-        self.textColor = [UIColor blackColor];
-        self.font = [UIFont systemFontOfSize:14];
-    }
-    return self;
-}
 
 - (void)dealNullWithBaseStateModel:(WKSimpleButtonStateModel *)baseModel
 {
