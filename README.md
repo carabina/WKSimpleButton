@@ -5,7 +5,7 @@
 
 `pod 'WKSimpleButton' , :git=> 'https://github.com/OComme/WKSimpleButton'`
 
-# 按钮相关设置
+# 一 按钮相关设置
 
 ## 基本设置
 ```
@@ -103,7 +103,7 @@
 ```
 
 
-# 模型数据`WKSimpleButtonStateModel`
+# 二 数据模型设置
 
 ```
 typedef NS_ENUM(NSInteger,WKSimpleButtonType){
