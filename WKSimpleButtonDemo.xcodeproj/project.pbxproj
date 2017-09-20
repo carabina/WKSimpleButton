@@ -370,8 +370,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 69B7DC7CFDE7B23876E23486 /* Pods-WKSimpleButtonDemo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GWCP73NNJ9;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = WKSimpleButtonDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = OComme.WKSimpleButtonDemo;
@@ -383,8 +385,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6825B67DDD436C0BFF068F7B /* Pods-WKSimpleButtonDemo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GWCP73NNJ9;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = WKSimpleButtonDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = OComme.WKSimpleButtonDemo;

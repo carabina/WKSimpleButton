@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "WKSimpleButton"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "A short description of WKSimpleButton."
 
   s.homepage     = "https://github.com/OComme/WKSimpleButton"
