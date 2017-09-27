@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
 
   s.name         = "WKSimpleButton"
-  s.version      = "0.0.2"
-  s.summary      = "A short description of WKSimpleButton."
+  s.version      = "0.0.3"
+  s.summary      = "a SimpleButton."
 
   s.homepage     = "https://github.com/OComme/WKSimpleButton"
 
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.author             = { "OComme" => "a1653913692@icloud.com" }
 
   s.source       = { :git => "https://github.com/OComme/WKSimpleButton.git", :tag => "#{s.version}" }
-  s.source_files  = "WKSimpleButtonDemo/**/WKSimpleButton/*"
+  s.source_files  = "WKSimpleButton/*"
 
   s.requires_arc = true
   s.ios.deployment_target = "8.0"
